@@ -1,0 +1,82 @@
+/* Custom styles for the page */
+.feature-card, .step-card {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover, .step-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-card {
+    position: relative;
+  }
+  
+  .step-card .absolute {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3E77F1;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, #F7FAFC, #ffffff);
+  }
+  /* Add this to your styles.css */
+/* Prevent content overlap due to fixed navbar */
+body {
+    padding-top: 4rem; /* Adjust the height to match your navbar */
+  }
+  
+  /* Highlight active navigation link */
+  nav a.text-red-500 {
+    border-bottom: 2px solid #3E77F1; /* Add bottom border for active link */
+  }
+  
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Button hover effects */
+  button:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .carousel-content {
+    min-height: 60px; /* Ensure consistent height */
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #3E77F1; /* Matches your existing color scheme */
+  }
+  
+  #carousel-text {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+
+
+
+
+  

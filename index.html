@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BidBuddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gradient-to-b from-blue-50 to-white">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+            <button onclick="location.href=''" class="object-cover w-full h-full">
+                <img src="images/logo2.png" alt="Logo-AR" class="object-cover w-full h-full" />
+              </button>  
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <button onclick="location.href='#features'" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                Features
+              </button>
+          
+            <button onclick="location.href='#how-it-works'" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                How it Works
+              </button>
+              
+          <button onclick="location.href='#about-us'" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+            About Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!--
+  <div class="relative w-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-100 via-white to-blue-100"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            Skip the visits, skip the stress— AI brings customers and their job details straight to you.
+          <br><br><br>
+          "AI-powered precision—no site visits, just instant quotes and unbeatable prices!"
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            AI-poweblue work solutions at your fingertips. Your personal guide to hassle-free hiring and project success.
+          </p>
+          <div class="flex space-x-4">
+            <button onclick="location.href='#about-us'" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 flex items-center">
+              About Us <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="w-full h-96 bg-blue-100 rounded-2xl overflow-hidden shadow-xl">
+           Replace with your app screenshot/demo
+            <div class="relative">
+                <div class="w-full h-96 bg-blue-100 rounded-2xl overflow-hidden shadow-xl">
+                  <img src="images/image2.jpg" alt="AR Demo" class="object-cover w-full h-full" />
+                </div>
+              </div>              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+<!-- Hero Section -->
+<div class="relative w-full">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-100 via-white to-blue-100"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <!-- Replace your current hero section heading with this -->
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <div id="carousel-text" class="text-4xl">Let AI scan, analyze, and connect you with the best service provider!</div>
+              </div>
+              <div class="carousel-dots flex justify-center mt-6 space-x-2">
+                <button class="dot active" onclick="setSlide(0)"></button>
+                <button class="dot" onclick="setSlide(1)"></button>
+                <button class="dot" onclick="setSlide(2)"></button>
+              </div>
+            </div>
+          </h1>
+        <div class="flex justify-center mt-6">
+          <button onclick="location.href='#about-us'" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 flex items-center">
+            About Us <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="w-full h-96 bg-blue-100 rounded-2xl overflow-hidden shadow-xl">
+          <!-- Replace with your app screenshot/demo -->
+          <div class="relative">
+              <div class="w-full h-96 bg-blue-100 rounded-2xl overflow-hidden shadow-xl">
+                <img src="images/image2.jpg" alt="AR Demo" class="object-cover w-full h-full" />
+              </div>
+            </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Features Section -->
+  <div id="features" class="bg-gradient-to-r from-white via-blue-50 to-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="feature-card p-6 bg-white rounded-xl shadow-lg">
+          <svg class="h-8 w-8 text-blue-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 7l6 6-6 6M21 7l-6 6 6 6" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">AI-Enhanced Work Inspection</h3>
+          <p class="text-gray-600">Automatically extracts dimensions and project details for accurate estimates.</p>
+        </div>
+        <div class="feature-card p-6 bg-white rounded-xl shadow-lg">
+          <svg class="h-8 w-8 text-blue-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9zM12 6v12M6 12h12" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Hassle-Free Digital Bidding</h3>
+          <p class="text-gray-600">Contractors can bid without site visits, saving time and effort.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div id="how-it-works" class="py-20 bg-gray-50 relative w-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-50 via-white to-blue-50"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <div class="flex items-center justify-center space-x-4">
+            <div class="step-card p-6 bg-white rounded-xl shadow-lg text-center w-1/5">
+                <h3 class="text-xl font-semibold mb-2">
+                  Describe Your Task
+                </h3>
+                <p class="text-gray-600 text-sm">Upload details, photos, and videos for contractors to review.</p>
+            </div>
+
+            <!-- Arrow SVG -->
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+            <div class="step-card p-6 bg-white rounded-xl shadow-lg text-center w-1/5">
+                <h3 class="text-xl font-semibold mb-2">
+                  AI-Driven Analysis & Sizing
+                </h3>
+                <p class="text-gray-600 text-sm">Get accurate measurements and project insights automatically.</p>
+            </div>
+
+            <!-- Arrow SVG -->
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+            <div class="step-card p-6 bg-white rounded-xl shadow-lg text-center w-1/5">
+                <h3 class="text-xl font-semibold mb-2">
+                  Choose from Multiple Offers
+                </h3>
+                <p class="text-gray-600 text-sm">Receive competitive offers and choose the best deal.</p>
+            </div>
+
+            <!-- Arrow SVG -->
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+            <div class="step-card p-6 bg-white rounded-xl shadow-lg text-center w-1/5">
+                <h3 class="text-xl font-semibold mb-2">
+                  Pick & Proceed
+                </h3>
+                <p class="text-gray-600 text-sm">Pick the right contractor and start the project seamlessly.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+       <!-- Video Container -->
+       <div class="mt-12 flex flex-col items-center text-center">
+        <h3 class="text-2xl font-semibold mb-4">See It In Action</h3>
+        <div class="w-full max-w-5xl bg-blue-100 rounded-2xl overflow-hidden shadow-xl flex justify-center">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/bfWKVoUCuPo" 
+                title="BidBuddy_Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>    
+  </div>
+
+  <!-- Team Section -->
+  <div id="team" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="team-member p-6 bg-gray-100 rounded-xl shadow-lg">
+          <img src="images/team1.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-center">Neeraj Jain</h3>
+          <p class="text-center text-gray-600">CEO & Founder</p>
+        </div>
+        <div class="team-member p-6 bg-gray-100 rounded-xl shadow-lg">
+          <img src="images/team2.avif" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-center">Zayed Bakoda</h3>
+          <p class="text-center text-gray-600">CTO</p>
+        </div>
+        <div class="team-member p-6 bg-gray-100 rounded-xl shadow-lg">
+          <img src="images/team3.avif" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-center">Atishay Jain</h3>
+          <p class="text-center text-gray-600">Lead Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <div id="about-us" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+      <p class="text-xl text-gray-600 text-center">
+        At BidBuddy, we are dedicated to transforming how people connect with skilled professionals. By leveraging AI-driven technology, we simplify the selection process, ensure transparent pricing, and reduce unnecessary on-site evaluations—making every task seamless, efficient, and hassle-free.
+      </p>
+    </div>
+  </div>
+
+
+  <script>
+    // Function to highlight the navigation link based on scroll position
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+  
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100; // Adjust offset for navbar height
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+  
+      navLinks.forEach((link) => {
+        link.classList.remove("text-blue-500");
+        link.classList.remove("font-bold");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("text-blue-500");
+          link.classList.add("font-bold");
+        }
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    const headlines = [
+      "Let AI scan, analyze, and connect you with the best service provider!",
+      "Your project, analyzed by AI: contractors bid, you save!",
+      "AI measures, contractors bid: you win!"
+    ];
+    
+    let currentSlide = 0;
+    let autoSlideInterval;
+    const carouselText = document.getElementById('carousel-text');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Function to change slides manually
+    window.setSlide = function(index) {
+      // Reset the interval when manually changing slides
+      clearInterval(autoSlideInterval);
+      startAutoSlide();
+      
+      // Update the slide
+      changeSlide(index);
+    }
+    
+    // Function to change the slide
+    function changeSlide(index) {
+      // Update currentSlide
+      currentSlide = index;
+      
+      // Fade out text
+      carouselText.style.opacity = 0;
+      
+      // After fade out, change text and fade in
+      setTimeout(() => {
+        carouselText.textContent = headlines[currentSlide];
+        carouselText.style.opacity = 1;
+        
+        // Update dots
+        dots.forEach((dot, i) => {
+          if (i === currentSlide) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }, 500); // Match this to the CSS transition time
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % headlines.length;
+      changeSlide(next);
+    }
+    
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 4 seconds
+    }
+    
+    // Initialize
+    startAutoSlide();
+  });
+</script>
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center py-6 mt-12">
+  <p class="text-sm">
+    Copyright © 2025 | <span class="font-semibold">FinSharp LLC</span> 
+    <span class="italic">"doing business as"</span> <span class="font-semibold">BidBuddy</span> | 
+    Conceptualized by <span class="font-semibold">Stratevity LLC</span> | All rights reserved
+  </p>
+</footer>
+
+  
+</body>
+</html>
